@@ -13,6 +13,7 @@ import fpdf
 from fpdf import FPDF
 import os
 from os.path import expanduser
+import pt_core_news_sm
 
 home = expanduser("~")
 caminho = os.path.join(home, "SocioEcoGraphs")
@@ -117,7 +118,7 @@ def main():
     root.mainloop()
     
     #Carrega modelo de ML para analise das questões abertas
-    nlp = spacy.load(r"C:/Users/caio/anaconda3/envs/envsocioeco/lib/site-packages/pt_core_news_sm/pt_core_news_sm-3.6.0")
+    nlp = pt_core_news_sm.load()
     print(nlp._path)
     nlp.Defaults.stop_words.add("trabalho")
     nlp.Defaults.stop_words.remove("nenhuma")
