@@ -18,10 +18,8 @@ import pt_core_news_sm
 home = expanduser("~")
 caminho = os.path.join(home, "SocioEcoGraphs")
 caminhoImagens = os.path.join(caminho, "Images")
-os.mkdir(caminho)
-os.mkdir(caminhoImagens)
-
-print(caminho)
+#os.mkdir(caminho)
+#os.mkdir(caminhoImagens)
 
 TITLE = "Graficos Perfil Socio Economico"
 WIDTH = 210
@@ -33,7 +31,7 @@ def CriaPDF():
 
 
     pdf.add_page()
-    pdf.image(CursosCaminho, 10, 8, 100)
+    pdf.image(EstadosCaminho, 10, 8, 100)
 
     pdf.output(caminhoPdf, 'F')
 
@@ -49,55 +47,108 @@ def CriaGraficoCursos(df):
     ContadorCursos = Counter(cursos)
     CursosNomes = list(ContadorCursos.keys())
     CursosFrequencias = list(ContadorCursos.values())
+    y = np.array(CursosFrequencias)
     global CursosCaminho
     CursosCaminho = os.path.join(caminhoImagens, "Cursos.png")
-    print(CursosCaminho)
+    porcent = 100.*y/y.sum()
 
-    plt.pie(CursosFrequencias, labels=CursosNomes, autopct='%1.1f%%', startangle=90)
-    plt.axis('equal')
+    patches, texts = plt.pie(CursosFrequencias, startangle=90, radius=1.2)
+    labels = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(CursosNomes, porcent)]
+
+    sort_legend = True
+    if sort_legend:
+        patches, labels, dummy =  zip(*sorted(zip(patches, labels, ContadorCursos),
+                                          key=lambda x: x[2],
+                                          reverse=True))
+
+    plt.legend(patches, labels, loc='upper left', bbox_to_anchor=(-0.1, 1.),
+           fontsize=8)
 
     plt.title('Distribuição de cursos')
 
     plt.savefig(CursosCaminho)
+    plt.clf()
 
 def CriaGraficoPeriodo(df):
     periodos = df
     ContadorPeriodos = Counter(periodos)
     PeriodoNomes = list(ContadorPeriodos.keys())
     PeriodoFrequencias = list(ContadorPeriodos.values())
+    y = np.array(PeriodoFrequencias)
+    global PeriodoCaminho
+    PeriodoCaminho = os.path.join(caminhoImagens, "Periodos.png")
+    porcent = 100.*y/y.sum()
 
-    plt.pie(PeriodoFrequencias, labels=PeriodoNomes, autopct='%1.1f%%', startangle=90)
-    plt.axis('equal')
+    patches, texts = plt.pie(PeriodoFrequencias, startangle=90, radius=1.2)
+    labels = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(PeriodoNomes, porcent)]
+
+    sort_legend = True
+    if sort_legend:
+        patches, labels, dummy =  zip(*sorted(zip(patches, labels, ContadorPeriodos),
+                                          key=lambda x: x[2],
+                                          reverse=True))
+
+    plt.legend(patches, labels, loc='upper left', bbox_to_anchor=(-0.1, 1.),
+           fontsize=8)
 
     plt.title('Distribuição de periodos')
 
-    plt.savefig("images/Periodos.png")
+    plt.savefig(PeriodoCaminho)
+    plt.clf()
 
 def CriaGraficoEstados(df):
     Estados = df
     ContadorEstados = Counter(Estados)
-    PeriodoEstados = list(ContadorEstados.keys())
+    EstadosNomes = list(ContadorEstados.keys())
     EstadosFrequencias = list(ContadorEstados.values())
+    y = np.array(EstadosFrequencias)
+    global EstadosCaminho
+    EstadosCaminho = os.path.join(caminhoImagens, "Estados.png")
+    porcent = 100.*y/y.sum()
 
-    plt.pie(EstadosFrequencias, labels=PeriodoEstados, autopct='%1.1f%%', startangle=90)
-    plt.axis('equal')
+    patches, texts = plt.pie(EstadosFrequencias, startangle=90, radius=1.2)
+    labels = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(EstadosNomes, porcent)]
+
+    sort_legend = True
+    if sort_legend:
+        patches, labels, dummy =  zip(*sorted(zip(patches, labels, ContadorEstados),
+                                          key=lambda x: x[2],
+                                          reverse=True))
+        
+    plt.legend(patches, labels, loc='upper left', bbox_to_anchor=(-0.1, 1.),
+           fontsize=8)
 
     plt.title('Estados de nascimento')
 
-    plt.savefig("images/Estados.png")
+    plt.savefig(EstadosCaminho)
+    plt.clf()
     
 def CriaGraficoCidades(df):
     Cidades = df
     ContadorCidades = Counter(Cidades)
     PeriodoCidades = list(ContadorCidades.keys())
     CidadesFrequencias = list(ContadorCidades.values())
+    y = np.array(CidadesFrequencias)
+    global CidadeCaminho
+    CidadeCaminho = os.path.join(caminhoImagens, "Cidades.png")
+    porcent = 100.*y/y.sum()
 
-    plt.pie(CidadesFrequencias, labels=PeriodoCidades, autopct='%1.1f%%', startangle=90)
-    plt.axis('equal')
+    patches, texts = plt.pie(CidadesFrequencias, startangle=90, radius=1.2)
+    labels = ['{0} - {1:1.2f} %'.format(i,j) for i,j in zip(PeriodoCidades, porcent)]
+
+    sort_legend = True
+    if sort_legend:
+        patches, labels, dummy =  zip(*sorted(zip(patches, labels, ContadorCidades),
+                                          key=lambda x: x[2],
+                                          reverse=True))
+        
+    plt.legend(patches, labels, loc='upper left', bbox_to_anchor=(-0.1, 1.),
+           fontsize=8)
 
     plt.title('Cidades de residência')
 
-    plt.savefig("images/Cidades.png")    
+    plt.savefig(CidadeCaminho, bbox_inches='tight') 
+    plt.clf()   
 
 def main():
     root = tk.Tk()
@@ -278,9 +329,9 @@ def main():
     sonhos = FrequenciaFrases.most_common(30)
 
     CriaGraficoCursos(df['Qual o seu curso ?'])
-    #CriaGraficoPeriodo(df['Qual o Período que você cursa? '])
-    #CriaGraficoEstados(df['Em qual estado do Brasil você nasceu ?'])
-    #CriaGraficoCidades(df['Qual a sua cidade de Residência ? (Em qual cidade você mora?)'])
+    CriaGraficoPeriodo(df['Qual o Período que você cursa? '])
+    CriaGraficoEstados(df['Em qual estado do Brasil você nasceu ?'])
+    CriaGraficoCidades(df['Qual a sua cidade de Residência ? (Em qual cidade você mora?)'])
 
     CriaPDF()
 

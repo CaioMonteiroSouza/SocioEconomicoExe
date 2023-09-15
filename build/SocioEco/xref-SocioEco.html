@@ -22,10 +22,14 @@ imports:
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
  &#8226;   <a href="#abc">abc</a>
+ &#8226;   <a href="#blis">blis</a>
+ &#8226;   <a href="#blis.py">blis.py</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#copyreg">copyreg</a>
+ &#8226;   <a href="#cymem">cymem</a>
+ &#8226;   <a href="#cymem.cymem">cymem.cymem</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#difflib">difflib</a>
  &#8226;   <a href="#encodings">encodings</a>
@@ -164,6 +168,7 @@ imports:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#matplotlib.pyplot">matplotlib.pyplot</a>
+ &#8226;   <a href="#murmurhash">murmurhash</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#numpy">numpy</a>
@@ -172,6 +177,9 @@ imports:
  &#8226;   <a href="#pandas">pandas</a>
  &#8226;   <a href="#pathlib">pathlib</a>
  &#8226;   <a href="#posixpath">posixpath</a>
+ &#8226;   <a href="#preshed">preshed</a>
+ &#8226;   <a href="#preshed.maps">preshed.maps</a>
+ &#8226;   <a href="#pt_core_news_sm">pt_core_news_sm</a>
  &#8226;   <a href="#pyi_rth__tkinter.py">pyi_rth__tkinter.py</a>
  &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_mplconfig.py">pyi_rth_mplconfig.py</a>
@@ -180,12 +188,72 @@ imports:
  &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#reprlib">reprlib</a>
+ &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#spacy">spacy</a>
+ &#8226;   <a href="#spacy.about">spacy.about</a>
+ &#8226;   <a href="#spacy.attrs">spacy.attrs</a>
+ &#8226;   <a href="#spacy.cli">spacy.cli</a>
+ &#8226;   <a href="#spacy.cli.convert">spacy.cli.convert</a>
+ &#8226;   <a href="#spacy.cli.debug_data">spacy.cli.debug_data</a>
+ &#8226;   <a href="#spacy.cli.download">spacy.cli.download</a>
+ &#8226;   <a href="#spacy.cli.evaluate">spacy.cli.evaluate</a>
+ &#8226;   <a href="#spacy.cli.info">spacy.cli.info</a>
+ &#8226;   <a href="#spacy.cli.package">spacy.cli.package</a>
+ &#8226;   <a href="#spacy.cli.pretrain">spacy.cli.pretrain</a>
+ &#8226;   <a href="#spacy.cli.profile">spacy.cli.profile</a>
+ &#8226;   <a href="#spacy.cli.train">spacy.cli.train</a>
+ &#8226;   <a href="#spacy.cli.validate">spacy.cli.validate</a>
+ &#8226;   <a href="#spacy.compat">spacy.compat</a>
+ &#8226;   <a href="#spacy.displacy">spacy.displacy</a>
+ &#8226;   <a href="#spacy.displacy.render">spacy.displacy.render</a>
+ &#8226;   <a href="#spacy.displacy.templates">spacy.displacy.templates</a>
+ &#8226;   <a href="#spacy.errors">spacy.errors</a>
+ &#8226;   <a href="#spacy.glossary">spacy.glossary</a>
+ &#8226;   <a href="#spacy.kb">spacy.kb</a>
+ &#8226;   <a href="#spacy.lang">spacy.lang</a>
+ &#8226;   <a href="#spacy.lang.char_classes">spacy.lang.char_classes</a>
+ &#8226;   <a href="#spacy.lang.en">spacy.lang.en</a>
+ &#8226;   <a href="#spacy.lang.en.lemmatizer">spacy.lang.en.lemmatizer</a>
+ &#8226;   <a href="#spacy.lang.en.lex_attrs">spacy.lang.en.lex_attrs</a>
+ &#8226;   <a href="#spacy.lang.en.stop_words">spacy.lang.en.stop_words</a>
+ &#8226;   <a href="#spacy.lang.en.syntax_iterators">spacy.lang.en.syntax_iterators</a>
+ &#8226;   <a href="#spacy.lang.en.tokenizer_exceptions">spacy.lang.en.tokenizer_exceptions</a>
+ &#8226;   <a href="#spacy.lang.lex_attrs">spacy.lang.lex_attrs</a>
+ &#8226;   <a href="#spacy.lang.norm_exceptions">spacy.lang.norm_exceptions</a>
+ &#8226;   <a href="#spacy.lang.punctuation">spacy.lang.punctuation</a>
+ &#8226;   <a href="#spacy.lang.tokenizer_exceptions">spacy.lang.tokenizer_exceptions</a>
+ &#8226;   <a href="#spacy.language">spacy.language</a>
+ &#8226;   <a href="#spacy.lexeme">spacy.lexeme</a>
  &#8226;   <a href="#spacy.matcher">spacy.matcher</a>
+ &#8226;   <a href="#spacy.matcher.dependencymatcher">spacy.matcher.dependencymatcher</a>
+ &#8226;   <a href="#spacy.matcher.matcher">spacy.matcher.matcher</a>
+ &#8226;   <a href="#spacy.matcher.phrasematcher">spacy.matcher.phrasematcher</a>
+ &#8226;   <a href="#spacy.morphology">spacy.morphology</a>
+ &#8226;   <a href="#spacy.parts_of_speech">spacy.parts_of_speech</a>
+ &#8226;   <a href="#spacy.pipeline">spacy.pipeline</a>
+ &#8226;   <a href="#spacy.pipeline.entityruler">spacy.pipeline.entityruler</a>
+ &#8226;   <a href="#spacy.pipeline.functions">spacy.pipeline.functions</a>
+ &#8226;   <a href="#spacy.scorer">spacy.scorer</a>
+ &#8226;   <a href="#spacy.strings">spacy.strings</a>
+ &#8226;   <a href="#spacy.symbols">spacy.symbols</a>
+ &#8226;   <a href="#spacy.tokenizer">spacy.tokenizer</a>
+ &#8226;   <a href="#spacy.tokens">spacy.tokens</a>
+ &#8226;   <a href="#spacy.tokens._retokenize">spacy.tokens._retokenize</a>
+ &#8226;   <a href="#spacy.tokens.doc">spacy.tokens.doc</a>
+ &#8226;   <a href="#spacy.tokens.span">spacy.tokens.span</a>
+ &#8226;   <a href="#spacy.tokens.token">spacy.tokens.token</a>
+ &#8226;   <a href="#spacy.tokens.underscore">spacy.tokens.underscore</a>
+ &#8226;   <a href="#spacy.util">spacy.util</a>
+ &#8226;   <a href="#spacy.vectors">spacy.vectors</a>
+ &#8226;   <a href="#spacy.vocab">spacy.vocab</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
+ &#8226;   <a href="#srsly">srsly</a>
+ &#8226;   <a href="#srsly.msgpack.util">srsly.msgpack.util</a>
  &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#thinc">thinc</a>
+ &#8226;   <a href="#thinc.extra.search">thinc.extra.search</a>
  &#8226;   <a href="#tkinter">tkinter</a>
  &#8226;   <a href="#tkinter.filedialog">tkinter.filedialog</a>
  &#8226;   <a href="#token">token</a>
@@ -199,6 +267,7 @@ imports:
  &#8226;   <a href="#urllib.response">urllib.response</a>
  &#8226;   <a href="#urllib.robotparser">urllib.robotparser</a>
  &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#wasabi">wasabi</a>
  &#8226;   <a href="#weakref">weakref</a>
 
   </div>
@@ -5579,7 +5648,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#blis.cy">blis.cy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#blis.cy">blis.cy</a>
  &#8226;   <a href="#blis.py">blis.py</a>
 
   </div>
@@ -5610,7 +5680,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#thinc.backends.numpy_ops">thinc.backends.numpy_ops</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#thinc.backends.numpy_ops">thinc.backends.numpy_ops</a>
 
   </div>
 
@@ -8230,7 +8301,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#cymem.about">cymem.about</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#cymem.about">cymem.about</a>
  &#8226;   <a href="#cymem.cymem">cymem.cymem</a>
 
   </div>
@@ -8262,7 +8334,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#thinc.backends.numpy_ops">thinc.backends.numpy_ops</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#thinc.backends.numpy_ops">thinc.backends.numpy_ops</a>
 
   </div>
 
@@ -19815,7 +19888,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#murmurhash.about">murmurhash.about</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#murmurhash.about">murmurhash.about</a>
  &#8226;   <a href="#murmurhash.mrmr">murmurhash.mrmr</a>
  &#8226;   <a href="#thinc.layers.strings2arrays">thinc.layers.strings2arrays</a>
 
@@ -40518,6 +40592,7 @@ imported by:
  &#8226;   <a href="#pkg_resources._vendor.importlib_resources.readers">pkg_resources._vendor.importlib_resources.readers</a>
  &#8226;   <a href="#pkg_resources._vendor.pyparsing.core">pkg_resources._vendor.pyparsing.core</a>
  &#8226;   <a href="#pkg_resources._vendor.zipp">pkg_resources._vendor.zipp</a>
+ &#8226;   <a href="#pt_core_news_sm">pt_core_news_sm</a>
  &#8226;   <a href="#pydantic">pydantic</a>
  &#8226;   <a href="#pyi_rth_pkgres.py">pyi_rth_pkgres.py</a>
  &#8226;   <a href="#pyparsing.core">pyparsing.core</a>
@@ -42099,7 +42174,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#preshed.about">preshed.about</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#preshed.about">preshed.about</a>
  &#8226;   <a href="#preshed.bloom">preshed.bloom</a>
  &#8226;   <a href="#preshed.maps">preshed.maps</a>
 
@@ -42147,7 +42223,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#thinc.backends.numpy_ops">thinc.backends.numpy_ops</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#thinc.backends.numpy_ops">thinc.backends.numpy_ops</a>
 
   </div>
 
@@ -42206,6 +42283,23 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="pt_core_news_sm"></a>
+  <a target="code" href="///C:/Users/caio/anaconda3/envs/envsocioeco/lib/site-packages/pt_core_news_sm/__init__.py" type="text/plain"><tt>pt_core_news_sm</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#pathlib">pathlib</a>
+ &#8226;   <a href="#spacy.util">spacy.util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#SocioEco.py">SocioEco.py</a>
 
   </div>
 
@@ -44242,7 +44336,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#requests">requests</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#requests.__version__">requests.__version__</a>
  &#8226;   <a href="#requests._internal_utils">requests._internal_utils</a>
  &#8226;   <a href="#requests.adapters">requests.adapters</a>
@@ -46453,7 +46548,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli._util">spacy.cli._util</a>
  &#8226;   <a href="#spacy.cli.download">spacy.cli.download</a>
  &#8226;   <a href="#spacy.cli.info">spacy.cli.info</a>
@@ -46480,7 +46576,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.am">spacy.lang.am</a>
  &#8226;   <a href="#spacy.lang.am.lex_attrs">spacy.lang.am.lex_attrs</a>
  &#8226;   <a href="#spacy.lang.ar.lex_attrs">spacy.lang.ar.lex_attrs</a>
@@ -46612,7 +46709,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.__main__">spacy.__main__</a>
  &#8226;   <a href="#spacy.cli._util">spacy.cli._util</a>
  &#8226;   <a href="#spacy.cli.apply">spacy.cli.apply</a>
@@ -46823,7 +46921,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
 
   </div>
@@ -46890,7 +46989,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
 
@@ -46971,7 +47071,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.cli.info">spacy.cli.info</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
@@ -47003,7 +47104,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.tests.pipeline.test_textcat">spacy.tests.pipeline.test_textcat</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
@@ -47087,7 +47189,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
 
@@ -47183,7 +47286,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
 
@@ -47209,7 +47313,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
 
   </div>
@@ -47240,7 +47345,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
 
   </div>
@@ -47499,7 +47605,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
 
   </div>
@@ -47526,7 +47633,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
 
@@ -47558,7 +47666,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli._util">spacy.cli._util</a>
  &#8226;   <a href="#spacy.cli.debug_data">spacy.cli.debug_data</a>
  &#8226;   <a href="#spacy.cli.info">spacy.cli.info</a>
@@ -47596,7 +47705,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.evaluate">spacy.cli.evaluate</a>
  &#8226;   <a href="#spacy.displacy.render">spacy.displacy.render</a>
  &#8226;   <a href="#spacy.displacy.templates">spacy.displacy.templates</a>
@@ -47621,7 +47731,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.displacy">spacy.displacy</a>
  &#8226;   <a href="#spacy.tests.test_displacy">spacy.tests.test_displacy</a>
 
@@ -47639,7 +47750,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.displacy.render">spacy.displacy.render</a>
 
   </div>
@@ -47658,7 +47770,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.download">spacy.cli.download</a>
  &#8226;   <a href="#spacy.cli.find_threshold">spacy.cli.find_threshold</a>
  &#8226;   <a href="#spacy.cli.project.remote_storage">spacy.cli.project.remote_storage</a>
@@ -47762,7 +47875,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
 
   </div>
 
@@ -47781,7 +47895,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.kb.candidate">spacy.kb.candidate</a>
  &#8226;   <a href="#spacy.kb.kb">spacy.kb.kb</a>
  &#8226;   <a href="#spacy.kb.kb_in_memory">spacy.kb.kb_in_memory</a>
@@ -47855,7 +47970,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.af">spacy.lang.af</a>
  &#8226;   <a href="#spacy.lang.am">spacy.lang.am</a>
  &#8226;   <a href="#spacy.lang.ar">spacy.lang.ar</a>
@@ -48647,7 +48763,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.am.punctuation">spacy.lang.am.punctuation</a>
  &#8226;   <a href="#spacy.lang.ar.punctuation">spacy.lang.ar.punctuation</a>
  &#8226;   <a href="#spacy.lang.bn.punctuation">spacy.lang.bn.punctuation</a>
@@ -49299,7 +49416,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.en.examples">spacy.lang.en.examples</a>
  &#8226;   <a href="#spacy.lang.en.lemmatizer">spacy.lang.en.lemmatizer</a>
  &#8226;   <a href="#spacy.lang.en.lex_attrs">spacy.lang.en.lex_attrs</a>
@@ -49387,7 +49505,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.en">spacy.lang.en</a>
 
   </div>
@@ -49405,7 +49524,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.en">spacy.lang.en</a>
  &#8226;   <a href="#spacy.tests.lang.en.test_text">spacy.tests.lang.en.test_text</a>
 
@@ -49441,7 +49561,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.en">spacy.lang.en</a>
  &#8226;   <a href="#spacy.tests.lang.test_attrs">spacy.tests.lang.test_attrs</a>
 
@@ -49463,7 +49584,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.en">spacy.lang.en</a>
  &#8226;   <a href="#spacy.tests.pipeline.test_pipe_methods">spacy.tests.pipeline.test_pipe_methods</a>
 
@@ -49485,7 +49607,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.en">spacy.lang.en</a>
 
   </div>
@@ -52026,7 +52149,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.tests.lang.test_attrs">spacy.tests.lang.test_attrs</a>
  &#8226;   <a href="#spacy.tests.matcher.test_matcher_logic">spacy.tests.matcher.test_matcher_logic</a>
 
@@ -53123,7 +53247,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.hi.lex_attrs">spacy.lang.hi.lex_attrs</a>
  &#8226;   <a href="#spacy.lang.ne.lex_attrs">spacy.lang.ne.lex_attrs</a>
 
@@ -53400,7 +53525,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.bg">spacy.lang.bg</a>
  &#8226;   <a href="#spacy.lang.da.punctuation">spacy.lang.da.punctuation</a>
  &#8226;   <a href="#spacy.lang.de.punctuation">spacy.lang.de.punctuation</a>
@@ -54854,7 +54980,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.am">spacy.lang.am</a>
  &#8226;   <a href="#spacy.lang.ar.tokenizer_exceptions">spacy.lang.ar.tokenizer_exceptions</a>
  &#8226;   <a href="#spacy.lang.bg">spacy.lang.bg</a>
@@ -55681,7 +55808,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.benchmark_speed">spacy.cli.benchmark_speed</a>
  &#8226;   <a href="#spacy.cli.debug_data">spacy.cli.debug_data</a>
  &#8226;   <a href="#spacy.cli.init_config">spacy.cli.init_config</a>
@@ -55828,7 +55956,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.tests.doc.test_doc_api">spacy.tests.doc.test_doc_api</a>
 
   </div>
@@ -55915,7 +56044,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.matcher">spacy.matcher</a>
 
   </div>
@@ -55950,7 +56080,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.matcher">spacy.matcher</a>
 
   </div>
@@ -55966,7 +56097,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.matcher">spacy.matcher</a>
 
   </div>
@@ -56465,7 +56597,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.debug_data">spacy.cli.debug_data</a>
  &#8226;   <a href="#spacy.scorer">spacy.scorer</a>
  &#8226;   <a href="#spacy.tests.morphology.test_morph_converters">spacy.tests.morphology.test_morph_converters</a>
@@ -56486,7 +56619,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.tests.vocab_vectors.test_vocab_api">spacy.tests.vocab_vectors.test_vocab_api</a>
 
   </div>
@@ -56547,7 +56681,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.debug_data">spacy.cli.debug_data</a>
  &#8226;   <a href="#spacy.cli.find_threshold">spacy.cli.find_threshold</a>
  &#8226;   <a href="#spacy.lang.bn">spacy.lang.bn</a>
@@ -56964,7 +57099,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.pipeline">spacy.pipeline</a>
 
   </div>
@@ -56990,7 +57126,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.pipeline">spacy.pipeline</a>
  &#8226;   <a href="#spacy.tests.pipeline.test_functions">spacy.tests.pipeline.test_functions</a>
 
@@ -57520,7 +57657,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.evaluate">spacy.cli.evaluate</a>
  &#8226;   <a href="#spacy.lang.ja">spacy.lang.ja</a>
  &#8226;   <a href="#spacy.lang.ko">spacy.lang.ko</a>
@@ -57554,7 +57692,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lookups">spacy.lookups</a>
  &#8226;   <a href="#spacy.tests.morphology.test_morph_features">spacy.tests.morphology.test_morph_features</a>
  &#8226;   <a href="#spacy.tests.morphology.test_morph_pickle">spacy.tests.morphology.test_morph_pickle</a>
@@ -57578,7 +57717,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.lang.am.tokenizer_exceptions">spacy.lang.am.tokenizer_exceptions</a>
  &#8226;   <a href="#spacy.lang.ar.tokenizer_exceptions">spacy.lang.ar.tokenizer_exceptions</a>
  &#8226;   <a href="#spacy.lang.bg.tokenizer_exceptions">spacy.lang.bg.tokenizer_exceptions</a>
@@ -64393,7 +64533,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.language">spacy.language</a>
  &#8226;   <a href="#spacy.tests.lang.en.test_customized_tokenizer">spacy.tests.lang.en.test_customized_tokenizer</a>
  &#8226;   <a href="#spacy.tests.serialize.test_serialize_language">spacy.tests.serialize.test_serialize_language</a>
@@ -64422,7 +64563,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.apply">spacy.cli.apply</a>
  &#8226;   <a href="#spacy.cli.benchmark_speed">spacy.cli.benchmark_speed</a>
  &#8226;   <a href="#spacy.cli.convert">spacy.cli.convert</a>
@@ -64624,7 +64766,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.pipeline.attributeruler">spacy.pipeline.attributeruler</a>
 
   </div>
@@ -64671,7 +64814,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.ml.models.multi_task">spacy.ml.models.multi_task</a>
  &#8226;   <a href="#spacy.tests.doc.test_graph">spacy.tests.doc.test_graph</a>
  &#8226;   <a href="#spacy.tests.parser.test_neural_parser">spacy.tests.parser.test_neural_parser</a>
@@ -64726,7 +64870,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.tests.test_cli">spacy.tests.test_cli</a>
  &#8226;   <a href="#spacy.tokens">spacy.tokens</a>
  &#8226;   <a href="#spacy.tokens._dict_proxies">spacy.tokens._dict_proxies</a>
@@ -64762,7 +64907,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.tokens">spacy.tokens</a>
  &#8226;   <a href="#spacy.tokens.underscore">spacy.tokens.underscore</a>
 
@@ -64787,7 +64933,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.language">spacy.language</a>
  &#8226;   <a href="#spacy.tests.doc.test_underscore">spacy.tests.doc.test_underscore</a>
  &#8226;   <a href="#spacy.tests.serialize.test_serialize_docbin">spacy.tests.serialize.test_serialize_docbin</a>
@@ -65457,7 +65604,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#pt_core_news_sm">pt_core_news_sm</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli._util">spacy.cli._util</a>
  &#8226;   <a href="#spacy.cli.apply">spacy.cli.apply</a>
  &#8226;   <a href="#spacy.cli.assemble">spacy.cli.assemble</a>
@@ -65629,7 +65778,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.debug_data">spacy.cli.debug_data</a>
  &#8226;   <a href="#spacy.ml.models.multi_task">spacy.ml.models.multi_task</a>
  &#8226;   <a href="#spacy.ml.staticvectors">spacy.ml.staticvectors</a>
@@ -65653,7 +65803,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy">spacy</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy">spacy</a>
  &#8226;   <a href="#spacy.cli.apply">spacy.cli.apply</a>
  &#8226;   <a href="#spacy.lang.ja">spacy.lang.ja</a>
  &#8226;   <a href="#spacy.lang.ko">spacy.lang.ko</a>
@@ -65889,7 +66040,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#confection">confection</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#confection">confection</a>
  &#8226;   <a href="#spacy.cli._util">spacy.cli._util</a>
  &#8226;   <a href="#spacy.cli.apply">spacy.cli.apply</a>
  &#8226;   <a href="#spacy.cli.convert">spacy.cli.convert</a>
@@ -66301,7 +66453,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#srsly.msgpack._packer">srsly.msgpack._packer</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#srsly.msgpack._packer">srsly.msgpack._packer</a>
 
   </div>
 
@@ -68081,7 +68234,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy.util">spacy.util</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy.util">spacy.util</a>
  &#8226;   <a href="#thinc">thinc</a>
  &#8226;   <a href="#thinc.about">thinc.about</a>
  &#8226;   <a href="#thinc.api">thinc.api</a>
@@ -68759,7 +68913,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#thinc">thinc</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#thinc">thinc</a>
  &#8226;   <a href="#thinc.tests.extra.test_beam_search">thinc.tests.extra.test_beam_search</a>
 
   </div>
@@ -76268,7 +76423,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#spacy.cli">spacy.cli</a>
+    <a href="#SocioEco.py">SocioEco.py</a>
+ &#8226;   <a href="#spacy.cli">spacy.cli</a>
  &#8226;   <a href="#spacy.cli._util">spacy.cli._util</a>
  &#8226;   <a href="#spacy.cli.apply">spacy.cli.apply</a>
  &#8226;   <a href="#spacy.cli.assemble">spacy.cli.assemble</a>
