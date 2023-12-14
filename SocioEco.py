@@ -19,8 +19,6 @@ import string
 home = expanduser("~")
 caminho = os.path.join(home, "SocioEcoGraphs")
 caminhoImagens = os.path.join(caminho, "Images")
-#os.mkdir(caminho)
-#os.mkdir(caminhoImagens)
 
 
 def CriaPDF():
