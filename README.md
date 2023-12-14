@@ -10,3 +10,7 @@ Baixe e execute o arquivo .exe
 ## Como usar
 
 Na primeira vez que o arquivo exe for executado uma pasta será criada no perfil do usuário onde os gráficos ficarão armazenados. caso execute outra vez lembre-se de excluir a pasta.
+
+## Observação
+
+Todos os nomes e e-mails foram apagados para preservar a privacidade dos alunos que responderam a pesquisa
