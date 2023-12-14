@@ -5,7 +5,7 @@ O objetivo do projeto é utilizar uma planilha que contém dados socioeconômico
 
 ## Instalação
 
-Baixe e execute o arquivo .exe
+Baixe e execute o arquivo .exe que esta dentro da pasta dist
 
 ## Como usar
 
